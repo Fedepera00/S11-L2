@@ -1,0 +1,58 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input id="nome" formControlName="nome" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label for="cognome">Cognome</label>
+    <input id="cognome" formControlName="cognome" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      id="password"
+      type="password"
+      formControlName="password"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <label for="confermaPassword">Conferma Password</label>
+    <input
+      id="confermaPassword"
+      type="password"
+      formControlName="confermaPassword"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <label for="genere">Genere</label>
+    <select id="genere" formControlName="genere" class="form-control">
+      <option value="maschio">Maschio</option>
+      <option value="femmina">Femmina</option>
+      <option value="altro">Altro</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="immagineProfilo">Immagine Profilo</label>
+    <input
+      id="immagineProfilo"
+      type="file"
+      formControlName="immagineProfilo"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <label for="biografia">Biografia</label>
+    <textarea
+      id="biografia"
+      formControlName="biografia"
+      class="form-control"
+    ></textarea>
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" class="form-control" />
+  </div>
+  <button type="submit" class="btn btn-primary">Registrati</button>
+</form>
